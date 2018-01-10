@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
 <meta charset="utf-8">
-<title>phonecase</title>
+<title>查看设备信息</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="Content-Language" content="zh-cn" />
@@ -13,13 +13,15 @@
   <script type="text/javascript">
   window.onload = function(){
       function getInfo(){ 
-       var s = "";   
-        s += " <div>屏幕分辨率的宽："+ window.screen.width+" </div>";    
-        s += " <div>屏幕分辨率的高："+ window.screen.height+" </div>";    
-        s += " <div>网页窗口区域宽："+ document.documentElement.clientWidth + " </div>";    
-        s += " <div>网页窗口区域高："+ document.documentElement.clientHeight + " </div>";    
-        s += " <div>屏幕DPI： "+ window.devicePixelRatio +" 像素/英寸"+"</div>";    
-        s += " <div>屏幕位彩色是： "+ window.screen.colorDepth +" 位"+"</div>";    
+        var s = "";   
+        s += " <div>屏幕分辨率的宽：<strong>"+ window.screen.width + "</strong></div>";    
+        s += " <div>屏幕分辨率的高：<strong>"+ window.screen.height + "</strong></div>";    
+        s += " <div>网页窗口区域宽：<strong>"+ document.documentElement.clientWidth + "</strong></div>";    
+        s += " <div>网页窗口区域高：<strong>"+ document.documentElement.clientHeight + "</strong></div>";    
+        s += " <div>屏幕DPI：<strong>"+ window.devicePixelRatio +" 像素/英寸"+"</strong></div>";    
+        s += " <div>屏幕位彩色是：<strong>"+ window.screen.colorDepth +" 位"+"</strong></div>";    
+        s += " <div>客户端信息：<strong>"+ navigator.userAgent + "</strong></div>"; 
+        s += " <div>平台：<strong>"+ navigator.platform + "</strong></div>"; 
         document.getElementById('phonecase').innerHTML = s;
       }
       getInfo();
