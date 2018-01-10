@@ -3,43 +3,18 @@
 <head>
 <meta charset="utf-8">
 <title>phonecase</title>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="Content-Language" content="zh-cn" />
-<style type="text/css">
-    *{margin:0;padding:0;font-size:13px;}
-    .wrap{padding:20px;line-height:1.8}
-</style>
+<link rel="stylesheet" type="text/css" href="style/helper.css">
 </head>
 <body>
-<div class="wrap" id="wrap">
 
-</div>
-<script type="text/javascript">
-window.onload = function(){
-    function getInfo(){ 
-     var s = "";   
-      s += " <div>网页可见区域宽："+ document.body.clientWidth+"</div>";    
-      s += " <div>网页可见区域高："+ document.body.clientHeight+"\n";    
-      s += " <div>网页可见区域宽："+ document.body.offsetWidth + " (包括边线和滚动条的宽)"+"</div>";    
-      s += " <div>网页可见区域高："+ document.body.offsetHeight + " (包括边线的宽)"+"</div>";    
-      s += " <div>网页正文全文宽："+ document.body.scrollWidth+"</div>";    
-      s += " <div>网页正文全文高："+ document.body.scrollHeight+"</div>";    
-      s += " <div>网页被卷去的高(ff)："+ document.body.scrollTop+"</div>";    
-      s += " <div>网页被卷去的高(ie)："+ document.documentElement.scrollTop+"</div>";    
-      s += " <div>网页被卷去的左："+ document.body.scrollLeft+"</div>";    
-      s += " <div>网页正文部分上："+ window.screenTop+"</div>";    
-      s += " <div>网页正文部分左："+ window.screenLeft+"</div>";    
-      s += " <div>屏幕分辨率的高："+ window.screen.height+"</div>";    
-      s += " <div>屏幕分辨率的宽："+ window.screen.width+"</div>";    
-      s += " <div>屏幕可用工作区高度："+ window.screen.availHeight+"</div>";    
-      s += " <div>屏幕可用工作区宽度："+ window.screen.availWidth+"</div>";    
-      s += " <div>你的屏幕设置是： "+ window.screen.colorDepth +" 位彩色"+"</div>";    
-      s += " <div>你的屏幕DPI设置： "+ window.devicePixelRatio +" 像素/英寸"+"</div>";    
-      document.getElementById('wrap').innerHTML = s;
-    }
-    getInfo();
-}
-  </script>
+  <div class="page">
+
+    <a class="mod_btn" href="./phonecase.html">查看手机设备信息</a>
+
+  </div>
+
 </body>
 </html>

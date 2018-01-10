@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>phonecase</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Language" content="zh-cn" />
+<link rel="stylesheet" type="text/css" href="style/helper.css">
+</head>
+<body>
+  <div class="phonecase" id="phonecase"></div>
+  <script type="text/javascript">
+  window.onload = function(){
+      function getInfo(){ 
+       var s = "";   
+        s += " <div>屏幕分辨率的宽："+ window.screen.width+" </div>";    
+        s += " <div>屏幕分辨率的高："+ window.screen.height+" </div>";    
+        s += " <div>网页窗口区域宽："+ document.documentElement.clientWidth + " </div>";    
+        s += " <div>网页窗口区域高："+ document.documentElement.clientHeight + " </div>";    
+        s += " <div>屏幕DPI： "+ window.devicePixelRatio +" 像素/英寸"+"</div>";    
+        s += " <div>屏幕位彩色是： "+ window.screen.colorDepth +" 位"+"</div>";    
+        document.getElementById('phonecase').innerHTML = s;
+      }
+      getInfo();
+  }
+  </script>
+</body>
+</html>
