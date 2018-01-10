@@ -20,8 +20,8 @@
         s += " <div>网页窗口区域高：<strong>"+ document.documentElement.clientHeight + "</strong></div>";    
         s += " <div>屏幕DPI：<strong>"+ window.devicePixelRatio +" 像素/英寸"+"</strong></div>";    
         s += " <div>屏幕位彩色是：<strong>"+ window.screen.colorDepth +" 位"+"</strong></div>";    
-        s += " <div>客户端信息：<strong>"+ navigator.userAgent + "</strong></div>"; 
         s += " <div>平台：<strong>"+ navigator.platform + "</strong></div>"; 
+        s += " <div>客户端信息：<strong>"+ navigator.userAgent + "</strong></div>"; 
         document.getElementById('phonecase').innerHTML = s;
       }
       getInfo();
