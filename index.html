@@ -35,7 +35,7 @@ window.onload = function(){
       s += " <div>屏幕可用工作区高度："+ window.screen.availHeight+"</div>";    
       s += " <div>屏幕可用工作区宽度："+ window.screen.availWidth+"</div>";    
       s += " <div>你的屏幕设置是： "+ window.screen.colorDepth +" 位彩色"+"</div>";    
-      s += " <div>你的屏幕DPI设置： "+ window.screen.deviceXDPI +" 像素/英寸"+"</div>";    
+      s += " <div>你的屏幕DPI设置： "+ window.devicePixelRatio +" 像素/英寸"+"</div>";    
       document.getElementById('wrap').innerHTML = s;
     }
     getInfo();
