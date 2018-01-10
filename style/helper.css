@@ -17,7 +17,7 @@ a,a:hover{text-decoration:none;}
 /*解决字体和文字大小在浏览器中没有被继承的问题*/
 button,input,textarea,select{font-family:inherit;font-size:100%;}
 
-.mod_btn{display:block;margin:30px;height:50px;line-height:50px;border-radius:30px;background:#31c27c;font-size:16px;color:#fff;text-align:center;}
+.mod_btn{display:block;margin:40px 30px;height:50px;line-height:50px;border-radius:30px;background:#31c27c;font-size:16px;color:#fff;text-align:center;}
 
 /*phonecase*/
 .phonecase{margin:20px;line-height:2;font-size:14px;}
