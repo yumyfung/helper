@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>查看设备信息</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Language" content="zh-cn" />
+<link rel="stylesheet" type="text/css" href="style/helper.css">
+</head>
+<body>
+    <audio id="shakemusic" preload="metadata">
+      <source src="media/5018.ogg" type="audio/ogg">
+      <source src="media/5018.mp3" type="audio/mpeg">
+      <source src="media/5018.wav" type="audio/wav">
+  </audio>
+  <div class="btns">
+    <a class="mod_btn" id="audio_play" href="##">播放</a>
+    <a class="mod_btn" id="audio_pause" href="##">暂停</a>
+  </div>
+  <script type="text/javascript">
+  window.onload = function(){
+      var shakemusic = document.getElementById('shakemusic');
+      var audio_play = document.getElementById('audio_play');
+      var audio_pause = document.getElementById('audio_pause');
+      audio_play.onClick = function(){
+        shakemusic.play();
+      }
+      audio_pause.onClick = function(){
+        shakemusic.pause();
+      }
+  }
+  </script>
+</body>
+</html>
