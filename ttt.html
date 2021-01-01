@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+    <title>全民猜歌</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <meta name="author" content="Tencent-ISUX-Music" />
+    <meta name="Copyright" content="Tencent" />
+    <!--关键字和描述一定要写-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--如果该页面只适合在手机上进行浏览，请添加以下代码-->
+    <meta name="applicable-device" content="mobile">
+    <script type="text/javascript">
+    (function(e,d,a){var b="orientationchange" in e?"orientationchange":"resize",f=d.documentElement;f.style="width:100vw";if(f.style.width.match("vw")){return true}function c(){switch(a){case"height":var h=Math.max(f.clientHeight,e.innerHeight),g=100*(h/667)||100;break;default:var h=Math.max(f.clientWidth,e.innerWidth),g=100*(h/375)||100}if(g<60){g=60}if(g>120){g=120}f.style.fontSize=g+"px"}e.addEventListener(b,c,false);c()})(window,document,"height");
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="anim_bg" id="animVideo">
+        <canvas class="anim_bg__main" id="animCanvas" width="750" height="386"></canvas>
+    </div>
+</div>
+<script src="js/muxAnimation.js"></script>
+<script type="text/javascript">
+
+    var keepImgs = Array(48).fill(0).map((_, index) => (index + 1) + '.png');
+
+    //安子动画
+    var muxAnimKeep = new MuxAnimation({
+        element: '#animCanvas',
+        frames: keepImgs,
+        url: 'img/frame/anko_1/',
+        fps: 24,
+        loop: true,
+        autoPlay: true,
+        onRenderStart: function(){
+            document.querySelector('.loading').style.display = 'none';
+        },
+        onFrameRender: function(index, spriteIndex){},
+        onRenderEnd: function(){},
+        onImgsLoad: function(){}
+    });
+
+
+</script>
+
+</body>
+</html>
